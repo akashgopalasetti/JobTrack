@@ -15,11 +15,11 @@ const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:5173';
 // CORS configuration
 const allowedOrigins = [
   FRONTEND_URL,
+  'https://jobtrack-5.onrender.com',
   'http://localhost:5173',
   'http://localhost:3000',
   'http://127.0.0.1:5173'
 ];
-
 app.use(
   cors({
     origin: function (origin, callback) {
